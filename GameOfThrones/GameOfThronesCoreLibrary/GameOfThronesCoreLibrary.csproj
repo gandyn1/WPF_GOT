@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Messages\IMessage.cs" />
     <Compile Include="Messages\MChat.cs" />
+    <Compile Include="Messages\MessagePieceMove.cs" />
     <Compile Include="Messages\MessagePlayerInfos.cs" />
     <Compile Include="Messages\MPlayerInfo.cs" />
     <Compile Include="MyTcpClient.cs" />

@@ -28,10 +28,18 @@ namespace Host
             ServiceChat = new ServiceChat();
             ServicePlayerInfo = new ServicePlayerInfo();
 
+            Clients.Subscribe<MessagePieceMove>(OnMessagePieceMove);
+
             while (true)
             {
 
             }
+        }
+
+        public static void OnMessagePieceMove(object sender, object obj)
+        {
+            var msg = (MessagePieceMove)obj;
+            Clients.Broadcast(msg);
         }
 
         
