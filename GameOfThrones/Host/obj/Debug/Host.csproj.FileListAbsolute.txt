@@ -11,3 +11,13 @@ c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\bin\Debug
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.exe.config
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.exe
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.exe
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\GameOfThronesCoreLibrary.dll
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\TracerX-Logger.dll
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\TracerX-Logger.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\TracerX-Logger.xml
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.Properties.Resources.resources
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.csproj.GenerateResource.Cache

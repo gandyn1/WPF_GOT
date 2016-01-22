@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using GameOfThronesCoreLibrary;
+using TracerX;
 
 namespace Host
 {
@@ -16,15 +17,18 @@ namespace Host
 
         public List<MyTcpClient> clients;
         private TcpListener server;
+        private static readonly Logger Logger = Logger.GetLogger("HostTcpListner");
 
         public HostTcpListner(string ip, int port)
         {
-           
-            server = new TcpListener(IPAddress.Parse(ip), port);
-            clients = new List<MyTcpClient>();
-            server.Start();
+            
+                server = new TcpListener(IPAddress.Parse(ip), port);
+                clients = new List<MyTcpClient>();
+                server.Start();
+                Logger.Info("Started Server");                
 
-            Task.Factory.StartNew(new Action(AcceptTcpClients));
+                Task.Factory.StartNew(new Action(AcceptTcpClients));
+           
         }
 
         private void AcceptTcpClients()
@@ -43,6 +47,7 @@ namespace Host
         {
             var client = (MyTcpClient)sender;
             clients.Remove(client);
+
             if (OnClientLeave != null)
                 OnClientLeave(client, null);
         }

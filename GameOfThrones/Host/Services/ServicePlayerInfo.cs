@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TracerX;
 
 namespace Host.Services
 {
     public class ServicePlayerInfo
     {
         public Dictionary<MyTcpClient, MessagePlayerInfo> PlayerInfoLookup = new Dictionary<MyTcpClient, MessagePlayerInfo>();
+        private static readonly Logger Logger = Logger.GetLogger("ServicePlayerInfo");
 
         public ServicePlayerInfo()
         {
@@ -24,7 +26,10 @@ namespace Host.Services
             var playerInfo = PlayerInfoLookup[client];
             playerInfo.isActive = false;
 
-            Host.ServiceChat.SendChatMessage(playerInfo.Name + " has left the server");
+            var text = playerInfo.Name + " has left the server";
+            Host.ServiceChat.SendChatMessage(text);
+            Logger.Info(text);
+
             BroadcastChangeToClients();
         }
 
@@ -36,7 +41,7 @@ namespace Host.Services
             if (PlayerInfoLookup.ContainsKey(client))
                 info = PlayerInfoLookup[client];
 
-            Console.WriteLine(String.Format("Recieved {0} from {1}", msg.Message, info != null ? info.Name : "New Player"));
+            Logger.Info(String.Format("Recieved {0} from {1}", msg.Message, info != null ? info.Name : "New Player"));            
         }
 
         private void MessagePlayerInfoHandler(object sender, object obj)
@@ -51,9 +56,11 @@ namespace Host.Services
             else
             {
                 PlayerInfoLookup.Add((MyTcpClient)sender, msg);
+
                 string text = msg.Name + " has joined the server";
-                Console.WriteLine(text);
                 Host.ServiceChat.SendChatMessage(text);
+                Logger.Info(text);
+
                 BroadcastChangeToClients();
             }
         }
