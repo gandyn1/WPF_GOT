@@ -1,0 +1,4 @@
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\bin\Debug\ViewModels.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\bin\Debug\ViewModels.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\obj\Debug\ViewModels.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\obj\Debug\ViewModels.pdb

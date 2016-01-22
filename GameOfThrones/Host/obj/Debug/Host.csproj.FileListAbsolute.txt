@@ -1,0 +1,13 @@
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\bin\Debug\Host.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\bin\Debug\Host.exe
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\bin\Debug\Host.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\obj\Debug\Host.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\obj\Debug\Host.Properties.Resources.resources
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\obj\Debug\Host.csproj.GenerateResource.Cache
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\obj\Debug\Host.exe
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\obj\Debug\Host.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\bin\Debug\GameOfThronesCoreLibrary.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Host\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.exe.config
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.exe
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.pdb

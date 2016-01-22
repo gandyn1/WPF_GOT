@@ -1,0 +1,5 @@
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\GameOfThronesCoreLibrary\bin\Debug\GameOfThronesCoreLibrary.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\GameOfThronesCoreLibrary\bin\Debug\GameOfThronesCoreLibrary.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.csprojResolveAssemblyReference.cache

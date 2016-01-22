@@ -1,0 +1,5 @@
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Messages\bin\Debug\Messages.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Messages\bin\Debug\Messages.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Messages\obj\Debug\Messages.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Messages\obj\Debug\Messages.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache

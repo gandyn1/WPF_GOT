@@ -1,0 +1,32 @@
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\bin\Debug\Client.exe.config
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\bin\Debug\Client.exe
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\bin\Debug\Client.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\MainWindow.g.cs
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\App.g.cs
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client_MarkupCompile.cache
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client_MarkupCompile.lref
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\MainWindow.baml
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client.g.resources
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client.Properties.Resources.resources
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client.exe
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client.pdb
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\bin\Debug\GameOfThronesCoreLibrary.dll
+c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\Client\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\bin\Debug\Client.exe.config
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.exe
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\bin\Debug\Client.exe
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\bin\Debug\Client.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\bin\Debug\GameOfThronesCoreLibrary.dll
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\MainWindow.g.cs
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\App.g.cs
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client_MarkupCompile.cache
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client_MarkupCompile.lref
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\MainWindow.baml
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.g.resources
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.csproj.GenerateResource.Cache
