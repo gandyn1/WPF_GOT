@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\GameOfThrones.cs" />
     <Compile Include="Messages\IMessage.cs" />
-    <Compile Include="Messages\MChat.cs" />
-    <Compile Include="Messages\MessagePieceMove.cs" />
+    <Compile Include="Messages\MessageChat.cs" />
+    <Compile Include="Messages\MessageGameBoardUpdate.cs" />
+    <Compile Include="Messages\MessageGamePieceInfo.cs" />
     <Compile Include="Messages\MessagePlayerInfos.cs" />
-    <Compile Include="Messages\MPlayerInfo.cs" />
+    <Compile Include="Messages\MessagePlayerInfo.cs" />
     <Compile Include="MyTcpClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />

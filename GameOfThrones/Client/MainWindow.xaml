@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
-        Title="Game Of Thrones" KeyDown="Window_KeyDown" Closing="Window_Closing" Height="882.501" Width="1610.899">
+        Title="Game Of Thrones" KeyDown="Window_KeyDown" Closing="Window_Closing" Height="870.477" Width="1776.834">
 
 
 
@@ -38,11 +38,10 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Viewbox >
-                <Canvas x:Name="ucBoard" Height="792" Width="1190" >
+                <Canvas x:Name="ucBoard" Height="792" Width="1190" Drop="ucBoard_Drop" DragOver="ucBoard_DragOver" AllowDrop="True" >
                     <Canvas.Background>
                         <ImageBrush ImageSource="Images/GOT_Board.jpg"/>
                     </Canvas.Background>
-                    <Ellipse x:Name="ucPiece" Height="42" Canvas.Left="811" Stroke="Black" Canvas.Top="611" Width="43" Fill="#FF1A1A5D" MouseDown="Ellipse_MouseDown" MouseMove="Ellipse_MouseMove" MouseUp="Ellipse_MouseUp"/>
                 </Canvas>
             </Viewbox>
         </Grid>
@@ -64,8 +63,14 @@
             </DockPanel>
         </Grid>
 
+        <StackPanel  Grid.Row="0" Grid.Column="0">
+            <WrapPanel x:Name="ucToolbox">
+                
+            </WrapPanel>
+        </StackPanel>
+        
         <!--Players Status-->
-        <ItemsControl x:Name="ucPlayers" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" 
+        <!--<ItemsControl x:Name="ucPlayers" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" 
               ItemsSource="{Binding PlayerInfos}"
               Margin="0,0,0,0" >
             <ItemsControl.ItemsPanel>
@@ -84,7 +89,7 @@
                     </WrapPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        </ItemsControl>-->
 
 
     </Grid>

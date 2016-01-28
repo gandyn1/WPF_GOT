@@ -61,6 +61,7 @@
     <Compile Include="Services\ServiceChat.cs" />
     <Compile Include="HostTcpListner.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Services\ServiceGamePieceManager.cs" />
     <Compile Include="Services\ServicePlayerInfo.cs" />
   </ItemGroup>
   <ItemGroup>

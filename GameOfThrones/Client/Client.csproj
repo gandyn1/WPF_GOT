@@ -55,7 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CollisionDetection.cs" />
     <Compile Include="PlayerInfoViewModel.cs" />
+    <Compile Include="UserControls\ucGamePiece.xaml.cs">
+      <DependentUpon>ucGamePiece.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +73,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControls\ucGamePiece.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -105,6 +113,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\GOT_Board.jpg" />
+    <Resource Include="Images\Pieces\Engine.png" />
+    <Resource Include="Images\Pieces\Knight.png" />
+    <Resource Include="Images\Pieces\Pawn.png" />
+    <Resource Include="Images\Pieces\Ship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\GOT_Board_CollisionDetection.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

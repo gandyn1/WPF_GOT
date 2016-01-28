@@ -15,6 +15,7 @@ namespace Host
         public static HostTcpListner Clients;        
         public static ServiceChat ServiceChat;
         public static ServicePlayerInfo ServicePlayerInfo;
+        public static ServiceGamePieceManager ServiceGamePieceManager;
         private static readonly Logger Logger = Logger.GetLogger("Host");
 
         static void Main()
@@ -27,22 +28,13 @@ namespace Host
             Clients = new HostTcpListner("192.168.1.167", 420);
             ServiceChat = new ServiceChat();
             ServicePlayerInfo = new ServicePlayerInfo();
-
-            Clients.Subscribe<MessagePieceMove>(OnMessagePieceMove);
+            ServiceGamePieceManager = new ServiceGamePieceManager();
 
             while (true)
             {
 
             }
         }
-
-        public static void OnMessagePieceMove(object sender, object obj)
-        {
-            var msg = (MessagePieceMove)obj;
-            Clients.Broadcast(msg);
-        }
-
         
-
     }
 }
