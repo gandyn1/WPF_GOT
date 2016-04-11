@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Reflection;
+using System.IO;
 
 namespace Client.UserControls
 {
@@ -37,8 +39,9 @@ namespace Client.UserControls
             (o, e) => ((ucGamePiece)o).OnGamePieceTypeChanged()));
 
        private void OnGamePieceTypeChanged()
-        {            
-            var path = Environment.CurrentDirectory +  "\\Pieces\\";
+        {
+
+            var path = Environment.CurrentDirectory + "\\Pieces\\";
 
             if (GamePieceType == GamePieceType.Knight)
                 path += "Knight.png";
@@ -54,7 +57,7 @@ namespace Client.UserControls
             
             ucBorder.Background = new ImageBrush(new BitmapImage(new Uri(path)));             
         }
-
+ 
         public ucGamePiece()
         {
             InitializeComponent();

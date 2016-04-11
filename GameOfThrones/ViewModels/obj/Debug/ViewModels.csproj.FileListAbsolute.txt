@@ -1,8 +1,0 @@
-c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\bin\Debug\ViewModels.dll
-c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\bin\Debug\ViewModels.pdb
-c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\obj\Debug\ViewModels.dll
-c:\users\nick\documents\visual studio 2015\Projects\GameOfThronse\ViewModels\obj\Debug\ViewModels.pdb
-C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\ViewModels\bin\Debug\ViewModels.dll
-C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\ViewModels\bin\Debug\ViewModels.pdb
-C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\ViewModels\obj\Debug\ViewModels.dll
-C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\ViewModels\obj\Debug\ViewModels.pdb

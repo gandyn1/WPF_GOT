@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xceed.Wpf.Toolkit.Themes.Metro</id>
+    <version>3.0.16174.17450</version>
+    <title>Xceed - Base Library - Metro Theme</title>
+    <authors>Xceed</authors>
+    <owners>Xceed</owners>
+    <licenseUrl>http://xceed.com/pages/Footer/Right/LicensesAgreement.aspx</licenseUrl>
+    <projectUrl>http://www.xceed.com/Extended_WPF_Toolkit_Intro.html</projectUrl>
+    <iconUrl>http://xceed.com/images/SocialNetworks/LogoXCEEDTwitter.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Extended WPF Toolkit Plus is the commercial edition of the popular Extended WPF Toolkit project, the number one collection of WPF controls for creating next-gen Windows apps.</description>
+    <summary>Metro theme for controls contained in the base library of Extended WPF Toolkit Plus.</summary>
+    <releaseNotes>See Xceed Extended WPF Toolkit Plus package for complete release notes:
+				http://www.nuget.org/packages/Extended.Wpf.Toolkit.Plus/3.0.16174.17450</releaseNotes>
+    <copyright>Copyright © Xceed Software Inc. 2007-2015</copyright>
+    <tags>xceed Extended WPF toolkit plus avalondock theme</tags>
+    <dependencies>
+      <dependency id="Xceed.Wpf.Toolkit" version="[3.0.16174.17450]" />
+      <dependency id="Xceed.Wpf.Themes.Metro" version="[3.0.16174.17450]" />
+    </dependencies>
+    <references>
+      <reference file="Xceed.Wpf.Toolkit.Themes.Metro.dll" />
+    </references>
+  </metadata>
+</package>

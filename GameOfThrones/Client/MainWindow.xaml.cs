@@ -34,10 +34,10 @@ namespace Client
         public static PlayerInfoViewModel vmPlayerInfo;
         public static CollisionDetection CollectionDetection;
 
-        public MainWindow()
+        public MainWindow(string ip, int port, string userName)
         {            
             //Init View Models
-            client = new MyTcpClient("192.168.1.167", 420);
+            client = new MyTcpClient(ip, port);
             vmChat = new ChatViewModel();            
             vmPlayerInfo = new PlayerInfoViewModel();
             //Init UI
@@ -48,7 +48,7 @@ namespace Client
             //ucPlayers.DataContext = vmPlayerInfo;
             //Send Message To Host about our player info
             myInfo = new MessagePlayerInfo();
-            myInfo.Name = "Nick";
+            myInfo.Name = userName;
             client.SendMessage(myInfo);
 
             ucBoard.Drop += ucBoard_Drop;

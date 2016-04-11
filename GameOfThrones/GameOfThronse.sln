@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{236061E0-F306-4CEB-BC88-93A73EA471D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{0ADABD2B-CC02-4EFB-B35B-4D11ADE7A971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{8DACED5F-3024-42CB-951D-D73CCCE031B9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfThronesCoreLibrary", "GameOfThronesCoreLibrary\GameOfThronesCoreLibrary.csproj", "{A6683557-8734-474B-AC1E-92E198860E13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfThrones", "GameOfThrones\GameOfThrones.csproj", "{8A14DF9D-67F8-45E7-B8EE-D500FEEB5B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +23,14 @@ Global
 		{0ADABD2B-CC02-4EFB-B35B-4D11ADE7A971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADABD2B-CC02-4EFB-B35B-4D11ADE7A971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADABD2B-CC02-4EFB-B35B-4D11ADE7A971}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DACED5F-3024-42CB-951D-D73CCCE031B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DACED5F-3024-42CB-951D-D73CCCE031B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DACED5F-3024-42CB-951D-D73CCCE031B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DACED5F-3024-42CB-951D-D73CCCE031B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6683557-8734-474B-AC1E-92E198860E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6683557-8734-474B-AC1E-92E198860E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6683557-8734-474B-AC1E-92E198860E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6683557-8734-474B-AC1E-92E198860E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A14DF9D-67F8-45E7-B8EE-D500FEEB5B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A14DF9D-67F8-45E7-B8EE-D500FEEB5B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A14DF9D-67F8-45E7-B8EE-D500FEEB5B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A14DF9D-67F8-45E7-B8EE-D500FEEB5B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -32,3 +32,21 @@ C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\MainWindow
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\MainWindow.baml
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\UserControls\ucGamePiece.g.cs
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\Client\obj\Debug\UserControls\ucGamePiece.baml
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\bin\Debug\Client.exe.config
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\bin\Debug\Client.exe
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\bin\Debug\Client.pdb
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\bin\Debug\GameOfThronesCoreLibrary.dll
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\MainWindow.g.cs
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\UserControls\ucGamePiece.g.cs
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\App.g.cs
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client_MarkupCompile.cache
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client_MarkupCompile.lref
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\MainWindow.baml
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\UserControls\ucGamePiece.baml
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.g.resources
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.Properties.Resources.resources
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.exe
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Client\obj\Debug\Client.pdb

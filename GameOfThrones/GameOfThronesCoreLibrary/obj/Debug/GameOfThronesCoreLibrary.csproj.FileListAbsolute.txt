@@ -7,3 +7,7 @@ C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bi
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin\Debug\GameOfThronesCoreLibrary.pdb
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.dll
 C:\Users\Nick\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.pdb
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin\Debug\GameOfThronesCoreLibrary.dll
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.dll
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.pdb

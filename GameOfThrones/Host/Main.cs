@@ -18,22 +18,17 @@ namespace Host
         public static ServiceGamePieceManager ServiceGamePieceManager;
         private static readonly Logger Logger = Logger.GetLogger("Host");
 
-        static void Main()
+        public Host(string ip, int port)
         {
             Thread.CurrentThread.Name = "Main Thread";
             Logger.DefaultBinaryFile.MaxSizeMb = 10;
             Logger.DefaultBinaryFile.CircularStartSizeKb = 1;
             Logger.DefaultBinaryFile.Open();
 
-            Clients = new HostTcpListner("192.168.1.167", 420);
+            Clients = new HostTcpListner(ip, port);
             ServiceChat = new ServiceChat();
             ServicePlayerInfo = new ServicePlayerInfo();
             ServiceGamePieceManager = new ServiceGamePieceManager();
-
-            while (true)
-            {
-
-            }
         }
         
     }

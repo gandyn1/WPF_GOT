@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xceed.Wpf.Toolkit</id>
+    <version>3.0.16174.17450</version>
+    <title>Xceed - Toolkit Base Library</title>
+    <authors>Xceed</authors>
+    <owners>Xceed</owners>
+    <licenseUrl>http://xceed.com/pages/Footer/Right/LicensesAgreement.aspx</licenseUrl>
+    <projectUrl>http://www.xceed.com/Extended_WPF_Toolkit_Intro.html</projectUrl>
+    <iconUrl>http://xceed.com/images/SocialNetworks/LogoXCEEDTwitter.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Extended WPF Toolkit Plus is the commercial edition of the popular Extended WPF Toolkit project, the number one collection of WPF controls for creating next-gen Windows apps.</description>
+    <summary>Contains the controls of the Extended WPF Toolkit Plus. Excludes ListBox, DataGrid, AvalonDock and custom themes that are in separate packages.</summary>
+    <releaseNotes>See Xceed Extended WPF Toolkit Plus package for complete release notes:
+				http://www.nuget.org/packages/Extended.Wpf.Toolkit.Plus/3.0.16174.17450</releaseNotes>
+    <copyright>Copyright © Xceed Software Inc. 2007-2015</copyright>
+    <tags>xceed Extended WPF toolkit plus</tags>
+    <references>
+      <reference file="Xceed.Wpf.Toolkit.dll" />
+    </references>
+  </metadata>
+</package>

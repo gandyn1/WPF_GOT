@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xceed.Wpf.AvalonDock.Themes.Metro</id>
+    <version>3.0.16174.17450</version>
+    <title>Xceed - AvalonDock - Metro Theme (Legacy)</title>
+    <authors>Xceed</authors>
+    <owners>Xceed</owners>
+    <licenseUrl>http://xceed.com/pages/Footer/Right/LicensesAgreement.aspx</licenseUrl>
+    <projectUrl>http://www.xceed.com/Extended_WPF_Toolkit_Intro.html</projectUrl>
+    <iconUrl>http://xceed.com/images/SocialNetworks/LogoXCEEDTwitter.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Extended WPF Toolkit Plus is the commercial edition of the popular Extended WPF Toolkit project, the number one collection of WPF controls for creating next-gen Windows apps.</description>
+    <summary>Legacy Metro theme for AvalonDock. This is obsolete. Use non-legacy Metro for theme consistency with the others toolkit's controls.</summary>
+    <releaseNotes>See Xceed Extended WPF Toolkit Plus package for complete release notes:
+				http://www.nuget.org/packages/Extended.Wpf.Toolkit.Plus/3.0.16174.17450</releaseNotes>
+    <copyright>Copyright © Xceed Software Inc. 2007-2015</copyright>
+    <tags>xceed Extended WPF toolkit plus avalondock metro theme</tags>
+    <dependencies>
+      <dependency id="Xceed.Wpf.AvalonDock" version="[3.0.16174.17450]" />
+    </dependencies>
+    <references>
+      <reference file="Xceed.Wpf.AvalonDock.Themes.Metro.dll" />
+    </references>
+  </metadata>
+</package>
