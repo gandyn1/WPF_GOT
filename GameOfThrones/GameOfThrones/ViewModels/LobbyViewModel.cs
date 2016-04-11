@@ -107,6 +107,7 @@ namespace GameOfThrones.ViewModels
                 {
                     var host = new Host.Host(ipAddress.Address.ToString(), ipAddress.Port);
                     AlertMsg = string.Format("{0} has started hosting at {1}", UserName, ipAddress.ToString());
+                    OnJoinCommand();
                 }
                 catch (Exception ex)
                 {
