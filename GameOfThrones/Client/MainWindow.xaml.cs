@@ -65,8 +65,8 @@ namespace Client
         {
             var uc = new UserControls.ucGamePiece();
             uc.GamePieceType = t;
-            uc.Width = 50;
-            uc.Height = 50;
+            uc.Width = 60;
+            uc.Height = 60;
 
             ucToolbox.Children.Add(uc);
         }
@@ -127,8 +127,23 @@ namespace Client
                 msg.PosX = dragEnd.X - dragStart.Value.X-10;
                 msg.PosY = dragEnd.Y - dragStart.Value.Y-10;
 
-                if (msg.PosX < 0 || msg.PosY < 0)
-                    msg.Action = MessageGamePieceInfo.Actions.Delete;
+
+                //LOGIC TO CHECK BOUNDS OF THE CANVAS IN REGARD TO GAME PIECE
+                //Rect p1 = new Rect();
+                //p1.Location = ucBoard.PointToScreen(new Point(0, 0));
+                //p1.Height = ucBoard.ActualHeight;
+                //p1.Width = ucBoard.ActualWidth;
+
+                //Rect p2 = new Rect();
+                //p2.Location = element.PointToScreen(new Point(0, 0));
+                //p2.Height = element.ActualHeight;
+                //p2.Width = element.ActualWidth;
+
+                //if (!p1.IntersectsWith(p2))
+                //{
+                //    msg.Action = MessageGamePieceInfo.Actions.Reset;
+                //}
+                    
 
                 client.SendMessage(msg);
 

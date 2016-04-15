@@ -10,7 +10,7 @@ namespace GameOfThronesCoreLibrary.Messages
     [Serializable]
     public class MessageGamePieceInfo : IMessage
     {
-        public enum Actions { Insert, Update, Delete }
+        public enum Actions { Insert, Update, Delete, Reset }
 
         public Actions Action = Actions.Insert;
         public Guid Key = Guid.NewGuid();

@@ -22,7 +22,10 @@ namespace Host.Services
             if (!MessageGamePieceInfo.ContainsKey(msg.Key))
                 MessageGamePieceInfo.Add(msg.Key, msg);
 
-            MessageGamePieceInfo[msg.Key] = msg;
+            if (msg.Action != GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Reset) {
+                MessageGamePieceInfo[msg.Key] = msg;
+            }
+
 
             if (msg.Action == GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Delete) {
                 MessageGamePieceInfo.Remove(msg.Key);

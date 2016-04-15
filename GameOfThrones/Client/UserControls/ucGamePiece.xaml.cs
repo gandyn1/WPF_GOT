@@ -55,7 +55,9 @@ namespace Client.UserControls
             if (GamePieceType == GamePieceType.Ship)
                 path += "Ship.png";
             
-            ucBorder.Background = new ImageBrush(new BitmapImage(new Uri(path)));             
+           ImageBrush b = new ImageBrush(new BitmapImage(new Uri(path)));     ;
+           b.Stretch = Stretch.Uniform;
+           ucBorder.Background = b;      
         }
  
         public ucGamePiece()
@@ -63,8 +65,8 @@ namespace Client.UserControls
             InitializeComponent();
             OnGamePieceTypeChanged();
             Margin = new Thickness(10);
-            Width = 30;
-            Height = 30;
+            Width = 50;
+            Height = 50;
         }
 
         private void UserControl_MouseMove(object sender, MouseEventArgs e)
