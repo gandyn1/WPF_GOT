@@ -1,7 +1,7 @@
 ﻿<Window x:Class="GameOfThrones.Views.LobbyView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Game Of Thrones" MinHeight="273" MinWidth="361.4" Height="238.8" Width="343" WindowStartupLocation="CenterScreen" >
+        Title="Game Of Thrones" MinHeight="273" MinWidth="361.4" Height="238.8" Width="343" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
         <Style TargetType="Label">

@@ -49,36 +49,38 @@ namespace Client
             //Send Message To Host about our player info
             myInfo = new MessagePlayerInfo();
             myInfo.Name = userName;
+            ctlPlayerName.Text = userName;
+            ctlPlayerColor.SelectedColor = myInfo.PlayerColor;
             client.SendMessage(myInfo);
 
             ucBoard.Drop += ucBoard_Drop;
-            AddPieceToToolbox(GamePieceType.Pawn);
-            AddPieceToToolbox(GamePieceType.Knight );
-            AddPieceToToolbox(GamePieceType.Engine);
-            AddPieceToToolbox(GamePieceType.Ship);
+            RefreshToolBox();
 
 
             client.Subscribe<MessageGameBoardUpdate>(HostGameBoardUpdate);
         }
 
+        private void RefreshToolBox()
+        {
+            ucToolbox.Children.Clear();
+            AddPieceToToolbox(GamePieceType.Pawn);
+            AddPieceToToolbox(GamePieceType.Knight);
+            AddPieceToToolbox(GamePieceType.Engine);
+            AddPieceToToolbox(GamePieceType.Ship);
+        }
+
         private void AddPieceToToolbox(GamePieceType t)
         {
             var uc = new UserControls.ucGamePiece();
+            uc.PieceColor = myInfo.PlayerColor;
             uc.GamePieceType = t;
+            uc.RefreshUI();
             uc.Width = 60;
             uc.Height = 60;
 
             ucToolbox.Children.Add(uc);
         }
-
-
-        private void Image_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            //DragDrop.DoDragDrop((DependencyObject)sender, sender, DragDropEffects.Copy);
-        }
-
         
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -121,8 +123,8 @@ namespace Client
                 var element = (UserControls.ucGamePiece)sender;
 
                 var dragEnd = e.GetPosition(ucBoard);
-               
-                MessageGamePieceInfo msg = new MessageGamePieceInfo();
+
+                MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo);
                 msg.Key = GamePieces.FirstOrDefault(o => o.Value == element).Key;
                 msg.PosX = dragEnd.X - dragStart.Value.X-10;
                 msg.PosY = dragEnd.Y - dragStart.Value.Y-10;
@@ -152,7 +154,7 @@ namespace Client
             }
         }
  
-            public static void BringToFront(UserControl element)
+        public static void BringToFront(UserControl element)
             {
                 if (element == null) return;
 
@@ -189,7 +191,7 @@ namespace Client
                             HandleGamePieceEvents(element);
                             BringToFront(element);
 
-                            MessageGamePieceInfo msg = new MessageGamePieceInfo();
+                            MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo);
                             GamePieces.Add(msg.Key, element);                            
                             msg.PosX = e.GetPosition(canvas).X - 25;
                             msg.PosY = e.GetPosition(canvas).Y - 25;
@@ -244,7 +246,7 @@ namespace Client
                 });
             }
 
-            UserControls.ucGamePiece element = GamePieces[msg.Key];
+            UserControls.ucGamePiece element = GamePieces[msg.Key];            
 
             App.Current.Dispatcher.Invoke(() =>
             {
@@ -253,14 +255,25 @@ namespace Client
                 ucBoard.Children.Add(element);
                 Canvas.SetLeft(element, msg.PosX);
                 Canvas.SetTop(element, msg.PosY);
+                element.PieceColor = msg.Player.PlayerColor;
+                element.RefreshUI();
             });
         }
 
         public Dictionary<Guid, UserControls.ucGamePiece> GamePieces = new Dictionary<Guid, UserControls.ucGamePiece>();
 
-        private void ucBoard_DragOver(object sender, DragEventArgs e)
+        private void ctlPlayerName_TextChanged(object sender, TextChangedEventArgs e)
         {
+            myInfo.Name = ctlPlayerName.Text;
+            client.SendMessage(myInfo); 
+        }
 
+        private void ctlPlayerColor_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
+        {
+            myInfo.PlayerColor = ctlPlayerColor.SelectedColor.Value;
+            client.SendMessage(myInfo);
+            
+            RefreshToolBox();
         }
     }
 }

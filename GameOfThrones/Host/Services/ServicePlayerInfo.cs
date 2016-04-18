@@ -8,14 +8,13 @@ using TracerX;
 
 namespace Host.Services
 {
-    public class ServicePlayerInfo
+    public class ServicePlayerInfo : BaseService<MessagePlayerInfo>
     {
         public Dictionary<MyTcpClient, MessagePlayerInfo> PlayerInfoLookup = new Dictionary<MyTcpClient, MessagePlayerInfo>();
         private static readonly Logger Logger = Logger.GetLogger("ServicePlayerInfo");
 
         public ServicePlayerInfo()
-        {
-            Host.Clients.Subscribe<MessagePlayerInfo>(MessagePlayerInfoHandler);
+        {            
             Host.Clients.DataReceived += Listner_DataReceived;
             Host.Clients.OnClientLeave += Listner_OnClientLeave;
         }
@@ -44,27 +43,6 @@ namespace Host.Services
             Logger.Info(String.Format("Recieved {0} from {1}", msg.Message, info != null ? info.Name : "New Player"));            
         }
 
-        private void MessagePlayerInfoHandler(object sender, object obj)
-        {
-            MessagePlayerInfo msg = (MessagePlayerInfo)obj;
-
-            if (PlayerInfoLookup.ContainsKey((MyTcpClient)sender))
-            {
-                PlayerInfoLookup[(MyTcpClient)sender] = msg;
-                BroadcastChangeToClients();
-            }
-            else
-            {
-                PlayerInfoLookup.Add((MyTcpClient)sender, msg);
-
-                string text = msg.Name + " has joined the server";
-                Host.ServiceChat.SendChatMessage(text);
-                Logger.Info(text);
-
-                BroadcastChangeToClients();
-            }
-        }
-
         private void BroadcastChangeToClients()
         {
             MessagePlayerInfos msg = new MessagePlayerInfos();
@@ -72,5 +50,35 @@ namespace Host.Services
             Host.Clients.Broadcast(msg);
         }
 
+        public override void MessageReceivedHandler(MyTcpClient client, MessagePlayerInfo msg)
+        {
+            if (PlayerInfoLookup.ContainsKey(client))
+            {                
+                PlayerInfoLookup[client] = msg;
+                Host.ServiceGamePieceManager.UpdateClient(msg);
+                BroadcastChangeToClients();
+            }
+            else
+            {
+                PlayerInfoLookup.Add(client, msg);
+                //Welcome new player
+                Host.ServiceChat.SendChatMessage(client, "Welcome to Game Of Thrones!");
+                //Let everyone know that someone new has join
+                string text = msg.Name + " has joined the server";
+                Host.ServiceChat.SendChatMessage(text);
+                Logger.Info(text);
+                //Random GOT Quote                
+                Host.ServiceChat.SendChatMessage(client, GameOfThronesQuotes.RandomQuote());
+                //Update new player with game pieces
+                Host.ServiceGamePieceManager.NotifyClient(client);
+                //Update everyone with all player informations
+                BroadcastChangeToClients();
+            }
+        }
+
+        public override bool NotifyClient(MyTcpClient client)
+        {
+            return false;
+        }
     }   
 }

@@ -23,24 +23,17 @@ namespace Client.UserControls
     /// </summary>
     public partial class ucGamePiece : UserControl
     {
- 
+        public System.Windows.Media.Color PieceColor = Colors.Blue;
 
-        public GamePieceType GamePieceType
+        public GamePieceType GamePieceType { get; set; }
+
+        public void OnGamePieceTypeChanged()
         {
-            get { return  (GamePieceType)GetValue(GamePieceTypeProperty); }
-            set { SetValue(GamePieceTypeProperty, value); }
+            RefreshUI();
         }
 
-        public static readonly DependencyProperty GamePieceTypeProperty =
-     DependencyProperty.Register(
-        "GamePieceType", typeof( GamePieceType), typeof(ucGamePiece),
-        new FrameworkPropertyMetadata(GamePieceType.Pawn,
-            FrameworkPropertyMetadataOptions.AffectsRender,
-            (o, e) => ((ucGamePiece)o).OnGamePieceTypeChanged()));
-
-       private void OnGamePieceTypeChanged()
+       public void RefreshUI()
         {
-
             var path = Environment.CurrentDirectory + "\\Pieces\\";
 
             if (GamePieceType == GamePieceType.Knight)
@@ -54,16 +47,19 @@ namespace Client.UserControls
 
             if (GamePieceType == GamePieceType.Ship)
                 path += "Ship.png";
-            
-           ImageBrush b = new ImageBrush(new BitmapImage(new Uri(path)));     ;
-           b.Stretch = Stretch.Uniform;
-           ucBorder.Background = b;      
+
+            var bmImage = new BitmapImage(new Uri(path));
+            var bm = GameOfThronesCoreLibrary.Utility.BitmapUtility.BitmapImageToBitmap(bmImage);
+            bm = GameOfThronesCoreLibrary.Utility.BitmapUtility.ColorTint(bm, PieceColor);
+            ImageBrush b = new ImageBrush(GameOfThronesCoreLibrary.Utility.BitmapUtility.BitmapToImageSource(bm));
+            b.Stretch = Stretch.Uniform;
+            ucBorder.Background = b;   
         }
- 
+
         public ucGamePiece()
         {
             InitializeComponent();
-            OnGamePieceTypeChanged();
+            RefreshUI();
             Margin = new Thickness(10);
             Width = 50;
             Height = 50;
@@ -86,8 +82,8 @@ namespace Client.UserControls
         {
             var uc = new UserControls.ucGamePiece();
             uc.GamePieceType = this.GamePieceType;
+            uc.PieceColor = this.PieceColor;
             return uc;
         }
-
     }
 }

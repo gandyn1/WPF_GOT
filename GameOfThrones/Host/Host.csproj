@@ -59,6 +59,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameOfThronesQuotes.cs" />
+    <Compile Include="Interfaces\IService.cs" />
+    <Compile Include="Services\BaseService.cs" />
     <Compile Include="Services\ServiceChat.cs" />
     <Compile Include="HostTcpListner.cs" />
     <Compile Include="Main.cs" />

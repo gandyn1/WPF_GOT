@@ -10,6 +10,13 @@ namespace GameOfThronesCoreLibrary.Messages
     [Serializable]
     public class MessageGamePieceInfo : IMessage
     {
+        public MessageGamePieceInfo(MessagePlayerInfo player)
+        {
+            this.Player = player;
+        }
+
+        public MessagePlayerInfo Player;
+
         public enum Actions { Insert, Update, Delete, Reset }
 
         public Actions Action = Actions.Insert;
@@ -17,7 +24,7 @@ namespace GameOfThronesCoreLibrary.Messages
         public double PosX;
         public double PosY;
 
-        public GamePieceType PieceType;
+        public GamePieceType PieceType;                
 
         public string Message
         {

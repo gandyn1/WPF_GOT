@@ -7,36 +7,40 @@ using System.Threading.Tasks;
 
 namespace Host.Services
 {
-    public class ServiceChat
+    public class ServiceChat : BaseService<MessageChat>
     {
-        public ServiceChat()
+        public override void MessageReceivedHandler(MyTcpClient client, MessageChat msg)
         {
-            Host.Clients.Subscribe<MessageChat>(MessageChatHandler);
-        }
-
-        public void MessageChatHandler(object sender, object obj)
-        {
-            SendChatMessage(sender, obj);
+            SendChatMessage(client, msg);
         }
 
         public void SendChatMessage(string text)
         {
             SendChatMessage("Host", text);
         }
-
         public void SendChatMessage(object sender, object obj)
         {
             var player = Host.ServicePlayerInfo.PlayerInfoLookup[(MyTcpClient)sender];
             MessageChat chat = (MessageChat)obj;
             SendChatMessage(player.Name, chat.text);
         }
-
+        public void SendChatMessage(MyTcpClient client, string text)
+        {
+            MessageChat msg = new MessageChat();
+            msg.text = text;
+            client.SendMessage(msg);
+        }
         public void SendChatMessage(string senderName, string text)
         {
             MessageChat msg = new MessageChat();
             msg.text = String.Format("{0} {2}: {1}", senderName, text, DateTime.Now.ToShortTimeString());
-            Host.Clients.Broadcast(msg);
+            Host.Clients.Broadcast(msg);            
         }
 
+        public override bool NotifyClient(MyTcpClient client)
+        {
+            //Does not apply
+            return false;
+        }
     }
 }

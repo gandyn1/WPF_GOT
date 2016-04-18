@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using SimpleMvvmToolkit;  
 
@@ -12,25 +13,49 @@ namespace GameOfThrones.ViewModels
 {
     public class LobbyViewModel : ViewModelBase<LobbyViewModel>
     {
-
         public DelegateCommand StartCommand {get;set;}
         public DelegateCommand JoinCommand { get; set; }
+        public DelegateCommand KillServerCommand { get; set; }
 
-        private string _UserName = "TornSaint";
+        private List<CancellationTokenSource> CancellationTokens = new List<CancellationTokenSource>();          
+
+        private string _UserName = null;
         public string UserName{
-            get { return _UserName; }
+            get {
+                if (_UserName == null)
+                {                    
+                    if(Properties.Settings.Default.LastPlayerName!="")
+                        _UserName = Properties.Settings.Default.LastPlayerName;
+                    else
+                        _UserName = "Player";
+                }                
+                return _UserName;
+            }
             set {
                 _UserName = value;
+                Properties.Settings.Default.LastPlayerName = value;
+                Properties.Settings.Default.Save();
                 NotifyPropertyChanged(o => o.UserName);
             }
         }
 
-        private string _IP = GetIP4Address() + ":123";
+        private string _IP = null;
         public string IP
         {
-            get { return _IP; }
+            get {
+                if (_IP == null)
+                {
+                    if (Properties.Settings.Default.LastIPAddress != "")
+                        _IP = Properties.Settings.Default.LastIPAddress;
+                    else
+                        _IP = GetIP4Address() + ":5555";
+                }
+                return _IP; 
+            }
             set {
                 _IP = value;
+                Properties.Settings.Default.LastIPAddress = value;
+                Properties.Settings.Default.Save();
                 NotifyPropertyChanged(o => o.IP);
             }
         }
@@ -66,6 +91,7 @@ namespace GameOfThrones.ViewModels
         {
             StartCommand = new DelegateCommand(OnStartCommand);
             JoinCommand = new DelegateCommand(OnJoinCommand);
+            KillServerCommand = new DelegateCommand(OnKillServerCommand);
         }
 
         private void OnJoinCommand()
@@ -100,6 +126,8 @@ namespace GameOfThrones.ViewModels
                 return;
 
             var ipAddress = CreateIPEndPoint(IP);
+            var cts = new CancellationTokenSource();
+            CancellationTokens.Add(cts);
 
             Task.Run(() =>
             {
@@ -112,8 +140,13 @@ namespace GameOfThrones.ViewModels
                 catch (Exception ex)
                 {
                     ErrorMsg = ex.Message;
-                }                
-            });                    
+                }
+            }, cts.Token);                             
+        }
+
+        private void OnKillServerCommand()
+        {
+            //Handle Task Cancel - CancellationTokens
         }
 
         private bool isValid()

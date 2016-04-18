@@ -20,8 +20,8 @@ namespace GameOfThrones.Views
     /// </summary>
     public partial class LobbyView : Window
     {
-        public ViewModels.LobbyViewModel LobbyViewModel; 
-
+        public ViewModels.LobbyViewModel LobbyViewModel;
+ 
         public LobbyView()
         {
             InitializeComponent();
