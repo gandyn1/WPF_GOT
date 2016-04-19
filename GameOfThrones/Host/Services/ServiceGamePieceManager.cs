@@ -10,14 +10,16 @@ namespace Host.Services
     public class ServiceGamePieceManager : BaseService<MessageGamePieceInfo>
     {
 
-        public Dictionary<Guid, MessageGamePieceInfo> MessageGamePieceInfo = new Dictionary<Guid, MessageGamePieceInfo>();
+        public Dictionary<Guid, MessageGamePieceInfo> MessageGamePieceInfo = new Dictionary<Guid, MessageGamePieceInfo>();        
 
         public override void MessageReceivedHandler(MyTcpClient client, MessageGamePieceInfo msg)
         {            
             if (msg.Action != GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Reset)
             {
                 if (!MessageGamePieceInfo.ContainsKey(msg.Key))
-                    MessageGamePieceInfo.Add(msg.Key, msg);
+                {
+                    MessageGamePieceInfo.Add(msg.Key, msg);                    
+                }
 
                 var owner = MessageGamePieceInfo[msg.Key].Player;
                 MessageGamePieceInfo[msg.Key] = msg;

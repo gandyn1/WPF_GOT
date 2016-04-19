@@ -81,8 +81,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CollisionDetection.cs" />
-    <Compile Include="PlayerInfoViewModel.cs" />
+    <Compile Include="Utility\SoundUtility.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\PlayerInfoViewModel.cs" />
     <Compile Include="UserControls\ucGamePiece.xaml.cs">
       <DependentUpon>ucGamePiece.xaml</DependentUpon>
     </Compile>
@@ -94,7 +95,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ChatViewModel.cs" />
+    <Compile Include="ViewModels\ChatViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -147,6 +148,42 @@
       <Project>{a6683557-8734-474b-ac1e-92e198860e13}</Project>
       <Name>GameOfThronesCoreLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_ChatReceived.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Cards.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Engine.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Knight.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Pawn.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Ship.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_PieceMove.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Engine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ship.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

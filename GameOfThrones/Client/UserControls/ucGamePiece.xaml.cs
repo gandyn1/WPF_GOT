@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Reflection;
 using System.IO;
+using System.Drawing;
 
 namespace Client.UserControls
 {
@@ -36,20 +37,30 @@ namespace Client.UserControls
         {
             var path = Environment.CurrentDirectory + "\\Pieces\\";
 
+            Width = 50;
+            Height = 50;
+
+            Bitmap bm = null;
+
             if (GamePieceType == GamePieceType.Knight)
-                path += "Knight.png";
+                bm = Properties.Resources.Image_Knight;                
 
             if (GamePieceType == GamePieceType.Engine)
-                path += "Engine.png";
+                bm = Properties.Resources.Image_Engine;
 
             if (GamePieceType == GamePieceType.Pawn)
-                path += "Pawn.png";
+                bm = Properties.Resources.Image_Pawn;
 
             if (GamePieceType == GamePieceType.Ship)
-                path += "Ship.png";
+                bm = Properties.Resources.Image_Ship;
 
-            var bmImage = new BitmapImage(new Uri(path));
-            var bm = GameOfThronesCoreLibrary.Utility.BitmapUtility.BitmapImageToBitmap(bmImage);
+            if (GamePieceType == GamePieceType.Marker)
+            {
+                bm = Properties.Resources.Image_Marker;
+                Width = 30;
+                Height = 30;
+            } 
+             
             bm = GameOfThronesCoreLibrary.Utility.BitmapUtility.ColorTint(bm, PieceColor);
             ImageBrush b = new ImageBrush(GameOfThronesCoreLibrary.Utility.BitmapUtility.BitmapToImageSource(bm));
             b.Stretch = Stretch.Uniform;
@@ -61,8 +72,6 @@ namespace Client.UserControls
             InitializeComponent();
             RefreshUI();
             Margin = new Thickness(10);
-            Width = 50;
-            Height = 50;
         }
 
         private void UserControl_MouseMove(object sender, MouseEventArgs e)

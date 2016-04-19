@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"        
         mc:Ignorable="d"
-        Title="Game Of Thrones" KeyDown="Window_KeyDown" Closing="Window_Closing" Height="870.477" Width="1776.834">
+        Title="Game Of Thrones" KeyDown="Window_KeyDown" Closing="Window_Closing" Height="500.477" Width="800.834"> <!--Height="870.477" Width="1776.834">-->
 
 
 

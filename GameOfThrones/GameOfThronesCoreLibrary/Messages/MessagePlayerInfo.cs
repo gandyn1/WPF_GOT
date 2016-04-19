@@ -13,6 +13,11 @@ namespace GameOfThronesCoreLibrary.Messages
         private Guid _PlayerKey = Guid.NewGuid();
         public Guid PlayerKey { get { return _PlayerKey; } }
 
+        public override string ToString()
+        {
+            return string.Format("name:  {0}  key;  {1}", Name, PlayerKey.ToString()) ;
+        }
+
         public string Name { get; set; }
 
         public bool isActive = true;

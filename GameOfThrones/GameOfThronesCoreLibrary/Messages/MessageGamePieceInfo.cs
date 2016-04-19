@@ -33,5 +33,10 @@ namespace GameOfThronesCoreLibrary.Messages
                 return "Updating a piece location";
             }
         }
+
+        public override string ToString()
+        {
+            return Player.ToString();
+        }
     }
 }

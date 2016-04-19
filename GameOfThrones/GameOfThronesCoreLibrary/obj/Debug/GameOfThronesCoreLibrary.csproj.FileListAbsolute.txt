@@ -11,3 +11,4 @@ C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin\Debug\GameOfThronesCoreLibrary.pdb
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.dll
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.pdb
+C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThronesCoreLibrary.csprojResolveAssemblyReference.cache

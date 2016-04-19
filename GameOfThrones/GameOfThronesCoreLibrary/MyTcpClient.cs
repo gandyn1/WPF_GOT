@@ -15,6 +15,14 @@ using System.Threading.Tasks;
 
         public TcpClient client = new TcpClient();
 
+        private string _Key = Guid.NewGuid().ToString();
+        public string Key { get { return _Key; } }
+
+        public override string ToString()
+        {
+            return Key;
+        }
+
         public MyTcpClient(TcpClient client)
         {
             this.client = client;

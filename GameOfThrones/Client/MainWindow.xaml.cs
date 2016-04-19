@@ -20,6 +20,7 @@ using GameOfThronesCoreLibrary.Messages;
 using System.Threading;
 using System.Windows.Media.Animation;
 using GameOfThronesCoreLibrary.Enums;
+using Client.ViewModels;
 
 namespace Client
 {
@@ -28,21 +29,19 @@ namespace Client
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static MyTcpClient client;
-        public static ChatViewModel vmChat;
-        public static MessagePlayerInfo myInfo;
-        public static PlayerInfoViewModel vmPlayerInfo;
-        public static CollisionDetection CollectionDetection;
+        public  MyTcpClient client;
+        public  ChatViewModel vmChat;
+        public  MessagePlayerInfo myInfo;
+        public  PlayerInfoViewModel vmPlayerInfo;
 
         public MainWindow(string ip, int port, string userName)
         {            
             //Init View Models
             client = new MyTcpClient(ip, port);
-            vmChat = new ChatViewModel();            
-            vmPlayerInfo = new PlayerInfoViewModel();
+            vmChat = new ChatViewModel(this);            
+            vmPlayerInfo = new PlayerInfoViewModel(this);
             //Init UI
             InitializeComponent();
-            CollectionDetection = new CollisionDetection(ucBoard);
             //Init DataContext
             gvChat.DataContext = vmChat;
             //ucPlayers.DataContext = vmPlayerInfo;
@@ -67,6 +66,7 @@ namespace Client
             AddPieceToToolbox(GamePieceType.Knight);
             AddPieceToToolbox(GamePieceType.Engine);
             AddPieceToToolbox(GamePieceType.Ship);
+            AddPieceToToolbox(GamePieceType.Marker);
         }
 
         private void AddPieceToToolbox(GamePieceType t)
@@ -145,7 +145,8 @@ namespace Client
                 //{
                 //    msg.Action = MessageGamePieceInfo.Actions.Reset;
                 //}
-                    
+
+                Utility.SoundUtility.PlayMovePiece();
 
                 client.SendMessage(msg);
 
@@ -154,7 +155,7 @@ namespace Client
             }
         }
  
-        public static void BringToFront(UserControl element)
+        public void BringToFront(UserControl element)
             {
                 if (element == null) return;
 
@@ -196,6 +197,8 @@ namespace Client
                             msg.PosX = e.GetPosition(canvas).X - 25;
                             msg.PosY = e.GetPosition(canvas).Y - 25;
                             msg.PieceType = element.GamePieceType;
+
+                            Utility.SoundUtility.Play(element.GamePieceType);
 
                             client.SendMessage(msg);                                       
                     }

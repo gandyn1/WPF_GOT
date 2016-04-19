@@ -1,6 +1,6 @@
 ﻿namespace GameOfThronesCoreLibrary.Enums
 {
 
-    public enum GamePieceType  { Pawn, Knight, Engine, Ship };
+    public enum GamePieceType  { Pawn, Knight, Engine, Ship, Marker };
 
 }
