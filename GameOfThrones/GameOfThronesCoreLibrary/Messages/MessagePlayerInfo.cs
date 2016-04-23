@@ -8,14 +8,14 @@ using  System.Windows.Media;
 namespace GameOfThronesCoreLibrary.Messages
 {
     [Serializable]
-    public class MessagePlayerInfo : IMessage
+    public class MessagePlayerInfo : IMessageAboutPlayer
     {
         private Guid _PlayerKey = Guid.NewGuid();
-        public Guid PlayerKey { get { return _PlayerKey; } }
+        public string PlayerKey { get { return _PlayerKey.ToString(); } }
 
         public override string ToString()
         {
-            return string.Format("name:  {0}  key;  {1}", Name, PlayerKey.ToString()) ;
+            return string.Format("name:  {0}  key;  {1}", Name, PlayerKey) ;
         }
 
         public string Name { get; set; }

@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameOfThronesCoreLibrary.Messages;
 
 namespace Host.Services
 {
-    public abstract class BaseService<TMessage> where TMessage : IMessage
+    public abstract class BaseService<TMessage> : GameOfThronesCoreLibrary.MessageListener<Host, TMessage> where TMessage : IMessage
     {
-        public BaseService(){
-            Host.Clients.Subscribe<TMessage>(MessageReceivedHandlerHelper);
-        }
-
-        private void MessageReceivedHandlerHelper(object sender, object obj)
+        public override void Subscribe<T>(Action<object, object> action)
         {
-            MessageReceivedHandler((MyTcpClient)sender, (TMessage)obj);
+            Host.Clients.Subscribe <TMessage>(action);
         }
 
-        public abstract void MessageReceivedHandler(MyTcpClient client, TMessage msg);
+        public override abstract void MessageReceivedHandler(MyTcpClient client, TMessage msg);
 
         public abstract bool NotifyClient(MyTcpClient client);
-
     }
 }

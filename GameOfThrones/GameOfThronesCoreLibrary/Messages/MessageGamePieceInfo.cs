@@ -8,14 +8,21 @@ using GameOfThronesCoreLibrary.Enums;
 namespace GameOfThronesCoreLibrary.Messages
 {
     [Serializable]
-    public class MessageGamePieceInfo : IMessage
+    public class MessageGamePieceInfo : IMessageAboutPlayer, IUnique 
     {
-        public MessageGamePieceInfo(MessagePlayerInfo player)
+        private Guid _Key = Guid.NewGuid();
+        string IUnique.Key
         {
-            this.Player = player;
+            get { return _Key.ToString();  }
         }
 
-        public MessagePlayerInfo Player;
+        public MessageGamePieceInfo(string playerKey)
+        {
+            _PlayerKey = playerKey;
+        }
+
+        private string _PlayerKey;
+        public string PlayerKey { get { return _PlayerKey; } }
 
         public enum Actions { Insert, Update, Delete, Reset }
 
@@ -34,9 +41,7 @@ namespace GameOfThronesCoreLibrary.Messages
             }
         }
 
-        public override string ToString()
-        {
-            return Player.ToString();
-        }
+
+        
     }
 }

@@ -4,17 +4,21 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameOfThronesCoreLibrary.Messages;
 
 namespace Client.ViewModels
 {
-    public class BaseViewModel 
-    {       
-        private MainWindow _Client;
-        public MainWindow Instance { get { return _Client; } }
-
-        public BaseViewModel(MainWindow main)
+    public abstract class BaseViewModel<TMessage> : GameOfThronesCoreLibrary.MessageListener<MainWindow,TMessage> where TMessage : IMessage
+    {
+        public BaseViewModel(MainWindow main) 
+            :base(main) { }  
+      
+        public override void Subscribe<T>(Action<object, object> action)
         {
-            _Client = main;
-        }        
+            Instance.client.Subscribe<T>(action);
+        }
+
+        public abstract override void MessageReceivedHandler(MyTcpClient client, TMessage msg);
+
     }
 }

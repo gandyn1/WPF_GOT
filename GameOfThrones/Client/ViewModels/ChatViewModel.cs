@@ -9,7 +9,7 @@ using GameOfThronesCoreLibrary.Messages;
 
 namespace Client.ViewModels
 {
-    public class ChatViewModel : BaseViewModel, INotifyPropertyChanged
+    public class ChatViewModel : BaseViewModel<MessageChat>, INotifyPropertyChanged
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -50,15 +50,7 @@ namespace Client.ViewModels
         public ChatViewModel(MainWindow main)
             :base(main)
         {
-            SendMessageCommand = new RelayCommand(SendMessage);
-            Instance.client.Subscribe<MessageChat>(RecieveMessage);
-        }
-
-        private void RecieveMessage(object sender, object obj)
-        {
-            MessageChat chat = (MessageChat)obj;
-            ReceivedText += chat.text + Environment.NewLine;
-            Utility.SoundUtility.PlayChatReceived();
+            SendMessageCommand = new RelayCommand(SendMessage);            
         }
 
         private void SendMessage(object obj)
@@ -74,9 +66,10 @@ namespace Client.ViewModels
             }            
         }
 
-
+        public override void MessageReceivedHandler(MyTcpClient client, MessageChat msg)
+        {
+            ReceivedText += msg.text + Environment.NewLine;
+            Utility.SoundUtility.PlayChatReceived();
+        }
     }
-
-
-
 }

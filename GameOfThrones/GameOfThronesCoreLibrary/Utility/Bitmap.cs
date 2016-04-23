@@ -55,7 +55,7 @@ namespace GameOfThronesCoreLibrary.Utility
         public static Bitmap ColorTint(this Bitmap sourceBitmap, float blueTint,
                                 float greenTint, float redTint)
         {
-            float percent = (float)0.4;
+            float percent = (float)0.6;
             BitmapData sourceData = sourceBitmap.LockBits(new Rectangle(0, 0,
                                     sourceBitmap.Width, sourceBitmap.Height),
                                     ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);

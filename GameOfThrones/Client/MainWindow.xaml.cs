@@ -33,11 +33,16 @@ namespace Client
         public  ChatViewModel vmChat;
         public  MessagePlayerInfo myInfo;
         public  PlayerInfoViewModel vmPlayerInfo;
+        public MessageManager MessageManager;
 
         public MainWindow(string ip, int port, string userName)
         {            
             //Init View Models
             client = new MyTcpClient(ip, port);
+
+            MessageManager = new MessageManager();
+            client.DataReceived += MessageManager.ListenHandler;
+
             vmChat = new ChatViewModel(this);            
             vmPlayerInfo = new PlayerInfoViewModel(this);
             //Init UI
@@ -51,6 +56,8 @@ namespace Client
             ctlPlayerName.Text = userName;
             ctlPlayerColor.SelectedColor = myInfo.PlayerColor;
             client.SendMessage(myInfo);
+
+            
 
             ucBoard.Drop += ucBoard_Drop;
             RefreshToolBox();
@@ -124,7 +131,7 @@ namespace Client
 
                 var dragEnd = e.GetPosition(ucBoard);
 
-                MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo);
+                MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo.PlayerKey);
                 msg.Key = GamePieces.FirstOrDefault(o => o.Value == element).Key;
                 msg.PosX = dragEnd.X - dragStart.Value.X-10;
                 msg.PosY = dragEnd.Y - dragStart.Value.Y-10;
@@ -192,7 +199,7 @@ namespace Client
                             HandleGamePieceEvents(element);
                             BringToFront(element);
 
-                            MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo);
+                            MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo.PlayerKey);
                             GamePieces.Add(msg.Key, element);                            
                             msg.PosX = e.GetPosition(canvas).X - 25;
                             msg.PosY = e.GetPosition(canvas).Y - 25;
@@ -258,7 +265,9 @@ namespace Client
                 ucBoard.Children.Add(element);
                 Canvas.SetLeft(element, msg.PosX);
                 Canvas.SetTop(element, msg.PosY);
-                element.PieceColor = msg.Player.PlayerColor;
+
+                //TODO: fix
+                //element.PieceColor = msg.Player.PlayerColor;
                 element.RefreshUI();
             });
         }

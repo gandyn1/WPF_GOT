@@ -46,7 +46,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\GameOfThrones.cs" />
+    <Compile Include="MessageCollection.cs" />
+    <Compile Include="MessageListener.cs" />
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="Messages\IUnique.cs" />
     <Compile Include="Messages\IMessage.cs" />
+    <Compile Include="Messages\IMessageAboutPlayer.cs" />
+    <Compile Include="Messages\IMessageCollection.cs" />
     <Compile Include="Messages\MessageChat.cs" />
     <Compile Include="Messages\MessageGameBoardUpdate.cs" />
     <Compile Include="Messages\MessageGamePieceInfo.cs" />

@@ -51,7 +51,7 @@ namespace Host.Services
         }
 
         public override void MessageReceivedHandler(MyTcpClient client, MessagePlayerInfo msg)
-        {
+        {            
             if (PlayerInfoLookup.ContainsKey(client))
             {                
                 PlayerInfoLookup[client] = msg;
