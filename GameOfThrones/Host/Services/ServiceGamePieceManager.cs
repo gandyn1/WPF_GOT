@@ -20,14 +20,13 @@ namespace Host.Services
                 {
                     MessageGamePieceInfo.Add(msg.Key, msg);                    
                 }
-
-                //TODO: fix
-                //var owner = MessageGamePieceInfo[msg.Key].Player;
-                //MessageGamePieceInfo[msg.Key] = msg;
+                
+                //TODO: fix                
+                MessageGamePieceInfo[msg.Key] = msg;
 
                 ////switch owner - in the future we might 
-                //if (msg.Player.PlayerKey != owner.PlayerKey)
-                //    MessageGamePieceInfo[msg.Key].Player = owner;
+               // if (msg.Player.PlayerKey != owner.PlayerKey)
+                 //   MessageGamePieceInfo[msg.Key].Player = owner;
             }
 
             if (msg.Action == GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Delete)

@@ -22,14 +22,12 @@ namespace Host
         private static readonly Logger Logger = Logger.GetLogger("HostTcpListner");
 
         public HostTcpListner(string ip, int port)
-        {
-            
+        {            
                 server = new TcpListener(IPAddress.Parse(ip), port);
                 clients = new List<MyTcpClient>();
                 server.Start();
                 Logger.Info("Started Server");                
-                Task.Factory.StartNew(new Action(AcceptTcpClients));
-           
+                Task.Factory.StartNew(new Action(AcceptTcpClients));           
         }
 
         private void AcceptTcpClients()

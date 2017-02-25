@@ -38,9 +38,9 @@ namespace Client
         public MainWindow(string ip, int port, string userName)
         {            
             //Init View Models
-            client = new MyTcpClient(ip, port);
+            client = new MyTcpClient(ip, port);            
 
-            MessageManager = new MessageManager();
+            MessageManager = new MessageManager();            
             client.DataReceived += MessageManager.ListenHandler;
 
             vmChat = new ChatViewModel(this);            
@@ -56,12 +56,9 @@ namespace Client
             ctlPlayerName.Text = userName;
             ctlPlayerColor.SelectedColor = myInfo.PlayerColor;
             client.SendMessage(myInfo);
-
             
-
             ucBoard.Drop += ucBoard_Drop;
             RefreshToolBox();
-
 
             client.Subscribe<MessageGameBoardUpdate>(HostGameBoardUpdate);
         }
@@ -132,26 +129,12 @@ namespace Client
                 var dragEnd = e.GetPosition(ucBoard);
 
                 MessageGamePieceInfo msg = new MessageGamePieceInfo(myInfo.PlayerKey);
+                msg.Action = MessageGamePieceInfo.Actions.Update;
                 msg.Key = GamePieces.FirstOrDefault(o => o.Value == element).Key;
                 msg.PosX = dragEnd.X - dragStart.Value.X-10;
                 msg.PosY = dragEnd.Y - dragStart.Value.Y-10;
 
-
-                //LOGIC TO CHECK BOUNDS OF THE CANVAS IN REGARD TO GAME PIECE
-                //Rect p1 = new Rect();
-                //p1.Location = ucBoard.PointToScreen(new Point(0, 0));
-                //p1.Height = ucBoard.ActualHeight;
-                //p1.Width = ucBoard.ActualWidth;
-
-                //Rect p2 = new Rect();
-                //p2.Location = element.PointToScreen(new Point(0, 0));
-                //p2.Height = element.ActualHeight;
-                //p2.Width = element.ActualWidth;
-
-                //if (!p1.IntersectsWith(p2))
-                //{
-                //    msg.Action = MessageGamePieceInfo.Actions.Reset;
-                //}
+                //LOGIC TO CHECK BOUNDS OF THE CANVAS IN REGARD TO GAME PIECE    
 
                 Utility.SoundUtility.PlayMovePiece();
 

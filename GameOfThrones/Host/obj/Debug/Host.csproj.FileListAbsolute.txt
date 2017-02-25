@@ -34,3 +34,16 @@ C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.csproj.G
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.dll.config
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.dll
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.dll.config
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\Host.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\GameOfThronesCoreLibrary.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\TracerX-Logger.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\GameOfThronesCoreLibrary.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\TracerX-Logger.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Debug\TracerX-Logger.xml
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.csprojResolveAssemblyReference.cache
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.Properties.Resources.resources
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.csproj.GenerateResource.Cache
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Debug\Host.pdb

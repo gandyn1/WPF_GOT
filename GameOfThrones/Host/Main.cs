@@ -34,11 +34,7 @@ namespace Host
 
             ServiceChat = new ServiceChat();
             ServicePlayerInfo = new ServicePlayerInfo();
-            ServiceGamePieceManager = new ServiceGamePieceManager();
-            
-             
-
-        
+            ServiceGamePieceManager = new ServiceGamePieceManager();                                 
         }
         
     }

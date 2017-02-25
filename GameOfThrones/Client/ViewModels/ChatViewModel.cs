@@ -61,7 +61,7 @@ namespace Client.ViewModels
 
                 chat.text = EnteredText;
                 EnteredText = "";
-
+ 
                 Instance.client.SendMessage(chat);                
             }            
         }
