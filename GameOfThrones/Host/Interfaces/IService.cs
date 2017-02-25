@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Host.Interfaces
+namespace GameOfThrones.Host.Interfaces
 {
     interface IService
     {

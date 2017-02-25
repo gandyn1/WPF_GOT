@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 
-namespace GameOfThronesCoreLibrary.Utility
+namespace GameOfThrones.Common.Utility
 {
     public static class BitmapUtility
     {

@@ -6,7 +6,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Client.Utility
+namespace GameOfThrones.Client.Utility
 {
     public static class SoundUtility
     {
@@ -50,15 +50,15 @@ namespace Client.Utility
             Play(Properties.Resources.Sound_PieceMove);
         }
 
-        public static void Play(GameOfThronesCoreLibrary.Enums.GamePieceType type)
+        public static void Play(GameOfThrones.Common.Enums.GamePieceType type)
         {
             switch (type)
             {
-                case GameOfThronesCoreLibrary.Enums.GamePieceType.Engine: PlayEngine(); break;
-                case GameOfThronesCoreLibrary.Enums.GamePieceType.Knight: PlayKnight(); break;
-                case GameOfThronesCoreLibrary.Enums.GamePieceType.Marker: PlayMarker(); break;
-                case GameOfThronesCoreLibrary.Enums.GamePieceType.Pawn: PlayPawn(); break;
-                case GameOfThronesCoreLibrary.Enums.GamePieceType.Ship: PlayShip(); break;
+                case GameOfThrones.Common.Enums.GamePieceType.Engine: PlayEngine(); break;
+                case GameOfThrones.Common.Enums.GamePieceType.Knight: PlayKnight(); break;
+                case GameOfThrones.Common.Enums.GamePieceType.Marker: PlayMarker(); break;
+                case GameOfThrones.Common.Enums.GamePieceType.Pawn: PlayPawn(); break;
+                case GameOfThrones.Common.Enums.GamePieceType.Ship: PlayShip(); break;
             }
         }
 

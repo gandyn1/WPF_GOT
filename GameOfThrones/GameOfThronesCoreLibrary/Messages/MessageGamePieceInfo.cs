@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GameOfThronesCoreLibrary.Enums;
+using GameOfThrones.Common.Enums;
 
-namespace GameOfThronesCoreLibrary.Messages
+namespace GameOfThrones.Common.Messages
 {
     [Serializable]
     public class MessageGamePieceInfo : IMessageAboutPlayer, IUnique 

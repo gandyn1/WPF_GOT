@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GameOfThronesCoreLibrary.Messages;
+using GameOfThrones.Common.Messages;
 
-namespace GameOfThronesCoreLibrary
+namespace GameOfThrones.Common
 {
     
     public class MessageManager  

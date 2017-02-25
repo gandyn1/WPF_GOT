@@ -1,11 +1,11 @@
-﻿using GameOfThronesCoreLibrary.Messages;
+﻿using GameOfThrones.Common.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Host.Services
+namespace GameOfThrones.Host.Services
 {
     public class ServiceChat : BaseService<MessageChat>
     {

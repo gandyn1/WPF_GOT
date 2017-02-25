@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
-using GameOfThronesCoreLibrary.WPF;
-using GameOfThronesCoreLibrary.Messages;
+using GameOfThrones.Common.WPF;
+using GameOfThrones.Common.Messages;
 
-namespace Client.ViewModels
+namespace GameOfThrones.Client.ViewModels
 {
     public class ChatViewModel : BaseViewModel<MessageChat>, INotifyPropertyChanged
     {

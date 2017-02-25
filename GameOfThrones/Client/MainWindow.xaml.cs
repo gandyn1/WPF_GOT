@@ -15,15 +15,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using GameOfThronesCoreLibrary;
-using GameOfThronesCoreLibrary.Messages;
+using GameOfThrones.Common;
+using GameOfThrones.Common.Messages;
 using System.Threading;
 using System.Windows.Media.Animation;
-using GameOfThronesCoreLibrary.Enums;
-using Client.Extensions;
-using Client.ViewModels;
+using GameOfThrones.Common.Enums;
+using GameOfThrones.Client.Extensions;
+using GameOfThrones.Client.ViewModels;
 
-namespace Client
+namespace GameOfThrones.Client
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

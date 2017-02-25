@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks; 
 using  System.Windows.Media;
 
-namespace GameOfThronesCoreLibrary.Messages
+namespace GameOfThrones.Common.Messages
 {
     [Serializable]
     public class MessagePlayerInfo : IMessageAboutPlayer
@@ -30,7 +30,7 @@ namespace GameOfThronesCoreLibrary.Messages
         {
             get
             {
-                return GameOfThronesCoreLibrary.Utility.BitmapUtility.Parse(_PlayerColor);
+                return GameOfThrones.Common.Utility.BitmapUtility.Parse(_PlayerColor);
             }
             set
             {

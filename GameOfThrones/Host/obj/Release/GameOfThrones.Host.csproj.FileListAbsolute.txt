@@ -1,0 +1,13 @@
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\GameOfThrones.Host.dll.config
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\GameOfThrones.Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\GameOfThrones.Host.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\GameOfThrones.Common.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\TracerX-Logger.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\GameOfThrones.Common.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\TracerX-Logger.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\bin\Release\TracerX-Logger.xml
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Release\GameOfThrones.Host.csprojResolveAssemblyReference.cache
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Release\GameOfThrones.Host.Properties.Resources.resources
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Release\GameOfThrones.Host.csproj.GenerateResource.Cache
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Release\GameOfThrones.Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\Host\obj\Release\GameOfThrones.Host.pdb

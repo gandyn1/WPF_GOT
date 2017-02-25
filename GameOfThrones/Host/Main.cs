@@ -1,5 +1,5 @@
-﻿using GameOfThronesCoreLibrary.Messages;
-using Host.Services;
+﻿using GameOfThrones.Common.Messages;
+using GameOfThrones.Host.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using TracerX;
-using GameOfThronesCoreLibrary;
+using GameOfThrones.Common;
 
-namespace Host
+namespace GameOfThrones.Host
 {
     public class Host
     {

@@ -1,11 +1,11 @@
-﻿using GameOfThronesCoreLibrary.Messages;
+﻿using GameOfThrones.Common.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Host.Services
+namespace GameOfThrones.Host.Services
 {
     public class ServiceGamePieceManager : BaseService<MessageGamePieceInfo>
     {
@@ -14,7 +14,7 @@ namespace Host.Services
 
         public override void MessageReceivedHandler(MyTcpClient client, MessageGamePieceInfo msg)
         {            
-            if (msg.Action != GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Reset)
+            if (msg.Action != GameOfThrones.Common.Messages.MessageGamePieceInfo.Actions.Reset)
             {
                 //Add New Piece
                 if (!MessageGamePieceInfo.ContainsKey(msg.Key))                
@@ -24,7 +24,7 @@ namespace Host.Services
                 MessageGamePieceInfo[msg.Key] = msg;
             }
 
-            if (msg.Action == GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Delete)
+            if (msg.Action == GameOfThrones.Common.Messages.MessageGamePieceInfo.Actions.Delete)
             {
                 MessageGamePieceInfo.Remove(msg.Key);
             }

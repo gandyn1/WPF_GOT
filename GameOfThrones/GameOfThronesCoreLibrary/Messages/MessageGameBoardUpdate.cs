@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameOfThronesCoreLibrary.Messages
+namespace GameOfThrones.Common.Messages
 {
     [Serializable]
     public class MessageGameBoardUpdate : IMessage

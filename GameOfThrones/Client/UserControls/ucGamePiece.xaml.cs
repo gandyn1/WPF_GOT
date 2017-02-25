@@ -1,4 +1,4 @@
-﻿using GameOfThronesCoreLibrary.Enums;
+﻿using GameOfThrones.Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ using System.Reflection;
 using System.IO;
 using System.Drawing;
 
-namespace Client.UserControls
+namespace GameOfThrones.Client.UserControls
 {
     /// <summary>
     /// Interaction logic for ucGamePiece.xaml
@@ -61,8 +61,8 @@ namespace Client.UserControls
                 Height = 30;
             } 
              
-            bm = GameOfThronesCoreLibrary.Utility.BitmapUtility.ColorTint(bm, PieceColor);
-            ImageBrush b = new ImageBrush(GameOfThronesCoreLibrary.Utility.BitmapUtility.BitmapToImageSource(bm));
+            bm = GameOfThrones.Common.Utility.BitmapUtility.ColorTint(bm, PieceColor);
+            ImageBrush b = new ImageBrush(GameOfThrones.Common.Utility.BitmapUtility.BitmapToImageSource(bm));
             b.Stretch = Stretch.Uniform;
             ucBorder.Background = b;   
         }

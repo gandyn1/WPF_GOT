@@ -1,4 +1,4 @@
-﻿using GameOfThronesCoreLibrary.Messages;
+﻿using GameOfThrones.Common.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TracerX;
 
-namespace Host.Services
+namespace GameOfThrones.Host.Services
 {
     public class ServicePlayerInfo : BaseService<MessagePlayerInfo>
     {

@@ -62,12 +62,20 @@ C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Simp
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\SimpleMvvmToolkit-WPF.xml
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\System.Windows.Interactivity.xml
 C:\GandyHome\Github Workspace\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.csprojResolveAssemblyReference.cache
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\Views\LobbyView.baml
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\Views\LobbyView.g.cs
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\App.g.cs
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones_MarkupCompile.cache
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.g.resources
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.Properties.Resources.resources
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.csproj.GenerateResource.Cache
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.exe.config
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.exe
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.pdb
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Client.exe
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThronesCoreLibrary.dll
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Host.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.Client.exe
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.Common.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.Host.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Microsoft.Expression.Interactions.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Newtonsoft.Json.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\SimpleMvvmToolkit-Common.dll
@@ -94,9 +102,9 @@ C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Xceed.Wpf.Toolkit.Themes.Metro.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Xceed.Wpf.Toolkit.Themes.Office2007.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\TracerX-Logger.dll
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Client.pdb
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThronesCoreLibrary.pdb
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Host.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.Client.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.Common.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\GameOfThrones.Host.pdb
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Microsoft.Expression.Interactions.xml
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\Newtonsoft.Json.xml
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\SimpleMvvmToolkit-Common.pdb
@@ -116,13 +124,5 @@ C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.csprojResolveAssemblyReference.cache
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\Views\LobbyView.baml
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\Views\LobbyView.g.cs
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\App.g.cs
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones_MarkupCompile.cache
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.g.resources
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.Properties.Resources.resources
-C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.csproj.GenerateResource.Cache
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.exe
 C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThrones\obj\Debug\GameOfThrones.pdb

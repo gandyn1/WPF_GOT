@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace GameOfThronesCoreLibrary.WPF
+namespace GameOfThrones.Common.WPF
 {
     public class RelayCommand : ICommand
     {

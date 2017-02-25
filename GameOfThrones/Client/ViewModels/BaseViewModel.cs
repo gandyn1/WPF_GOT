@@ -4,11 +4,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GameOfThronesCoreLibrary.Messages;
+using GameOfThrones.Common.Messages;
 
-namespace Client.ViewModels
+namespace GameOfThrones.Client.ViewModels
 {
-    public abstract class BaseViewModel<TMessage> : GameOfThronesCoreLibrary.MessageListener<MainWindow,TMessage> where TMessage : IMessage
+    public abstract class BaseViewModel<TMessage> : GameOfThrones.Common.MessageListener<MainWindow,TMessage> where TMessage : IMessage
     {
         public BaseViewModel(MainWindow main) 
             :base(main) { }  

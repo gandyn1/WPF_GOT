@@ -1,0 +1,4 @@
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin\Debug\GameOfThrones.Common.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\bin\Debug\GameOfThrones.Common.pdb
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThrones.Common.dll
+C:\Users\nicho\OneDrive\Documents\GitHub\WPF_GOT\GameOfThrones\GameOfThronesCoreLibrary\obj\Debug\GameOfThrones.Common.pdb

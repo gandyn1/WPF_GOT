@@ -181,17 +181,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Client\Client.csproj">
+    <ProjectReference Include="..\Client\GameOfThrones.Client.csproj">
       <Project>{0adabd2b-cc02-4efb-b35b-4d11ade7a971}</Project>
-      <Name>Client</Name>
+      <Name>GameOfThrones.Client</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GameOfThronesCoreLibrary\GameOfThronesCoreLibrary.csproj">
+    <ProjectReference Include="..\GameOfThronesCoreLibrary\GameOfThrones.Common.csproj">
       <Project>{a6683557-8734-474b-ac1e-92e198860e13}</Project>
-      <Name>GameOfThronesCoreLibrary</Name>
+      <Name>GameOfThrones.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Host\Host.csproj">
+    <ProjectReference Include="..\Host\GameOfThrones.Host.csproj">
       <Project>{236061e0-f306-4ceb-bc88-93a73ea471d6}</Project>
-      <Name>Host</Name>
+      <Name>GameOfThrones.Host</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

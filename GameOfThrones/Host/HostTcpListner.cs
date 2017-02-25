@@ -6,11 +6,11 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using GameOfThronesCoreLibrary;
-using GameOfThronesCoreLibrary.Messages;
+using GameOfThrones.Common;
+using GameOfThrones.Common.Messages;
 using TracerX;
 
-namespace Host
+namespace GameOfThrones.Host
 {
     public class HostTcpListner
     {        
