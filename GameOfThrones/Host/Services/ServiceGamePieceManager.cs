@@ -16,17 +16,12 @@ namespace Host.Services
         {            
             if (msg.Action != GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Reset)
             {
-                if (!MessageGamePieceInfo.ContainsKey(msg.Key))
-                {
+                //Add New Piece
+                if (!MessageGamePieceInfo.ContainsKey(msg.Key))                
                     MessageGamePieceInfo.Add(msg.Key, msg);                    
-                }
-                
-                //TODO: fix                
+                                
+                //Update Piece              
                 MessageGamePieceInfo[msg.Key] = msg;
-
-                ////switch owner - in the future we might 
-               // if (msg.Player.PlayerKey != owner.PlayerKey)
-                 //   MessageGamePieceInfo[msg.Key].Player = owner;
             }
 
             if (msg.Action == GameOfThronesCoreLibrary.Messages.MessageGamePieceInfo.Actions.Delete)

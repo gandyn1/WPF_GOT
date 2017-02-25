@@ -55,8 +55,8 @@ namespace Host.Services
             if (PlayerInfoLookup.ContainsKey(client))
             {                
                 PlayerInfoLookup[client] = msg;
-                Host.ServiceGamePieceManager.UpdateClient(msg);
                 BroadcastChangeToClients();
+                Host.ServiceGamePieceManager.UpdateClient(msg);                
             }
             else
             {
@@ -69,10 +69,10 @@ namespace Host.Services
                 Logger.Info(text);
                 //Random GOT Quote                
                 Host.ServiceChat.SendChatMessage(client, GameOfThronesQuotes.RandomQuote());
-                //Update new player with game pieces
-                Host.ServiceGamePieceManager.NotifyClient(client);
                 //Update everyone with all player informations
                 BroadcastChangeToClients();
+                //Update new player with game pieces
+                Host.ServiceGamePieceManager.NotifyClient(client);                
             }
         }
 

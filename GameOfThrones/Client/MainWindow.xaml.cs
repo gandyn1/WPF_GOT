@@ -20,6 +20,7 @@ using GameOfThronesCoreLibrary.Messages;
 using System.Threading;
 using System.Windows.Media.Animation;
 using GameOfThronesCoreLibrary.Enums;
+using Client.Extensions;
 using Client.ViewModels;
 
 namespace Client
@@ -30,9 +31,12 @@ namespace Client
     public partial class MainWindow : Window
     {
         public  MyTcpClient client;
-        public  ChatViewModel vmChat;
+        
         public  MessagePlayerInfo myInfo;
-        public  PlayerInfoViewModel vmPlayerInfo;
+
+        public static ChatViewModel vmChat;
+        public static PlayerInfoViewModel vmPlayerInfo;
+
         public MessageManager MessageManager;
 
         public MainWindow(string ip, int port, string userName)
@@ -248,9 +252,8 @@ namespace Client
                 ucBoard.Children.Add(element);
                 Canvas.SetLeft(element, msg.PosX);
                 Canvas.SetTop(element, msg.PosY);
-
-                //TODO: fix
-                //element.PieceColor = msg.Player.PlayerColor;
+               
+                element.PieceColor = msg.PlayerInfo().PlayerColor;
                 element.RefreshUI();
             });
         }
@@ -266,8 +269,7 @@ namespace Client
         private void ctlPlayerColor_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
         {
             myInfo.PlayerColor = ctlPlayerColor.SelectedColor.Value;
-            client.SendMessage(myInfo);
-            
+            client.SendMessage(myInfo);            
             RefreshToolBox();
         }
     }
